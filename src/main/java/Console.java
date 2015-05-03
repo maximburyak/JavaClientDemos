@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Created by HR on 4/30/2015.
  */
@@ -5,7 +8,7 @@ public class Console {
     public static void main(String[] args){
 
         int input = 0;
-
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while(input  != -1) {
             System.out.println("Choose Your Demonstration:");
             System.out.println("1) Transactions");
@@ -19,6 +22,17 @@ public class Console {
 
             System.out.println("20) Clear Screen");
 
+            try {
+                input  = Integer.parseInt(br.readLine());
+            }
+            catch (Exception ex){
+                System.out.println(String.format("illegal input: %1$s", ex.getMessage()));
+            }
+
+            if (input >= 1 && input <= 20)
+                processCommand(input);
+            else
+                System.out.println(String.format("illegal input: %1$d", input));
 
             /*
             * WOW Features:
@@ -29,11 +43,19 @@ public class Console {
             * 5) Map Reduce visualizer
             * 6) 
             * */
-            System.out.println("Choose Your Demonstration:");
         }
     }
 
-    public void ProcessCommand(String command){
-
+    public static void processCommand(int command){
+        switch (command){
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            default:
+                break;
+        }
     }
 }
