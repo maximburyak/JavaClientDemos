@@ -1,7 +1,10 @@
 package Northwind;
 
+import com.mysema.query.annotations.QueryEntity;
+
 import java.math.BigDecimal;
 
+@QueryEntity
 public class Product
 {
     private String id ;

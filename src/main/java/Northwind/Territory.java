@@ -1,8 +1,11 @@
 package Northwind;
 
+import com.mysema.query.annotations.QueryEntity;
+
 /**
  * Created by Maxim on 01/05/2015.
  */
+@QueryEntity
 public class Territory {
     private String code ;
     private String name ;

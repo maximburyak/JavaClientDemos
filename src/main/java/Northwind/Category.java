@@ -1,5 +1,8 @@
 package Northwind;
 
+import com.mysema.query.annotations.QueryEntity;
+
+@QueryEntity
 public class Category
 {
     private String id ;

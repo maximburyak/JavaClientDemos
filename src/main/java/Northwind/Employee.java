@@ -1,10 +1,13 @@
 package Northwind;
+import com.mysema.query.annotations.QueryEntity;
+
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by Maxim on 01/05/2015.
  */
+@QueryEntity
 public class Employee {
     private String id ;
     private String lastName ;
