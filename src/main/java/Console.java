@@ -1,3 +1,6 @@
+import Demonstrations.TransactionDemostration;
+import TransactionalBank.QAccount;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -6,7 +9,7 @@ import java.io.InputStreamReader;
  */
 public class Console {
     public static void main(String[] args){
-
+        QAccount dd;
         int input = 0;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while(input  != -1) {
@@ -30,7 +33,11 @@ public class Console {
             }
 
             if (input >= 1 && input <= 20)
-                processCommand(input);
+                try {
+                    processCommand(input);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             else
                 System.out.println(String.format("illegal input: %1$d", input));
 
@@ -46,10 +53,10 @@ public class Console {
         }
     }
 
-    public static void processCommand(int command){
+    public static void processCommand(int command) throws  Exception{
         switch (command){
             case 1:
-                break;
+                new TransactionDemostration().Execute();
             case 2:
                 break;
             case 3:
