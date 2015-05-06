@@ -1,3 +1,5 @@
+import Demonstrations.BulkInsertDemo;
+import Demonstrations.DemonstrationBase;
 import Demonstrations.TransactionDemostration;
 import TransactionalBank.QAccount;
 
@@ -9,6 +11,8 @@ import java.io.InputStreamReader;
  */
 public class Console {
     public static void main(String[] args){
+        System.setProperty("org.apache.commons.logging.Log",
+                "org.apache.commons.logging.impl.NoOpLog");
         QAccount dd;
         int input = 0;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,7 +42,7 @@ public class Console {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            else
+            else if (input != -1)
                 System.out.println(String.format("illegal input: %1$d", input));
 
             /*
@@ -53,16 +57,23 @@ public class Console {
         }
     }
 
-    public static void processCommand(int command) throws  Exception{
+    public static DemonstrationBase GetDemonstration(int command){
         switch (command){
             case 1:
-                new TransactionDemostration().Execute();
+                return new TransactionDemostration();
             case 2:
                 break;
             case 3:
-                break;
+                return new BulkInsertDemo();
             default:
                 break;
+        }
+
+        return null;
+    }
+    public static void processCommand(int command) throws  Exception{
+        try( DemonstrationBase demo =  new TransactionDemostration()){
+            demo.Execute();
         }
     }
 }

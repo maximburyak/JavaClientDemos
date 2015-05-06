@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaClientDemos:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="05acf5d3-6072-4691-9aa5-3ada26fbe1b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java" afterPath="$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Demonstrations/BulkInsertDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Demonstrations/DemonstrationBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaClientDemos_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Demonstrations/StreamingAPIDemo.java" />
+      <change type="DELETED" beforePath="C:\work\javaClientDemos\src\main\java\Demonstrations\IDemonstrationBase.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Console.java" afterPath="$PROJECT_DIR$/src/main/java/Console.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java" afterPath="$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaClientDemos.iws" />
@@ -33,18 +45,8 @@
       <file leaf-file-name="Console.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Console.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1190">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplicationFailover.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5215909" vertical-offset="0" max-vertical-offset="880">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1445">
+              <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,32 +54,92 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ReplicationFailover.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="799">
-              <caret line="37" column="21" selection-start-line="19" selection-start-column="12" selection-end-line="37" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Northwind/Company.java">
+      <file leaf-file-name="BulkInsertDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/BulkInsertDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="816">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1105">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamingAPIDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/StreamingAPIDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5443886" vertical-offset="32" max-vertical-offset="629">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDocumentStore.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/IDocumentStore.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="1207">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Throwable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/lang/Throwable.java">
+      <file leaf-file-name="IDisposalNotification.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/IDisposalNotification.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10353" max-vertical-offset="17595">
-              <caret line="645" column="17" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="17" />
+            <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="323">
+              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CleanCloseable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/abstractions/basic/CleanCloseable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="255">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Closeable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/io/Closeable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemonstrationBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/DemonstrationBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="850">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,48 +147,8 @@
       <file leaf-file-name="TransactionDemostration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="389" max-vertical-offset="1649">
-              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentSession.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/DocumentSession.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="16473">
-              <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InMemoryDocumentSessionOperations.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/InMemoryDocumentSessionOperations.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10047" max-vertical-offset="14994">
-              <caret line="700" column="55" selection-start-line="700" selection-start-column="42" selection-end-line="700" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IDemonstrationBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/IDemonstrationBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Address.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Northwind/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="527">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -147,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Northwind/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/Northwind/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/Northwind/Product.java" />
@@ -156,12 +177,18 @@
         <option value="$PROJECT_DIR$/src/main/java/Northwind/Supplier.java" />
         <option value="$PROJECT_DIR$/src/main/java/Northwind/Territory.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionalBank/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/IDemonstrationBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionalBank/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionalBank/Operation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Console.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java" />
         <option value="$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/target/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/IDemonstrationBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/BulkInsertDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/DemonstrationBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Console.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Demonstrations/StreamingAPIDemo.java" />
       </list>
     </option>
   </component>
@@ -173,9 +200,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -233,15 +261,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaClientDemos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaClientDemos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,36 +302,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TransactionalBank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaClientDemos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaClientDemos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Northwind" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,6 +350,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -547,34 +556,54 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1040" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32359308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25698924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25479743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4090909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4090909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -596,12 +625,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/DocumentSession.class</url>
           <line>112</line>
@@ -636,85 +659,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="799">
-          <caret line="37" column="21" selection-start-line="19" selection-start-column="12" selection-end-line="37" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Northwind/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="816">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10166" max-vertical-offset="17663">
-          <caret line="645" column="17" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/DocumentSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="16473">
-          <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/InMemoryDocumentSessionOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10047" max-vertical-offset="14994">
-          <caret line="700" column="55" selection-start-line="700" selection-start-column="42" selection-end-line="700" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/IDemonstrationBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Northwind/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="527">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Console.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1139">
           <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,7 +674,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -743,7 +694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/IDemonstrationBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/DemonstrationBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
@@ -798,7 +749,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -821,7 +774,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -902,30 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TransactionalBank/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#240#241#0" expanded="false" />
-            <element signature="e#268#269#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#344#345#0" expanded="false" />
-            <element signature="e#375#376#0" expanded="false" />
-            <element signature="e#405#406#0" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#486#487#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/abstractions/basic/CleanCloseable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.76" vertical-offset="0" max-vertical-offset="255">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TransactionalBank/Operation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
@@ -948,18 +879,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/DocumentStore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.08" vertical-offset="2418" max-vertical-offset="7803">
-          <caret line="239" column="21" selection-start-line="239" selection-start-column="21" selection-end-line="239" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10166" max-vertical-offset="17663">
           <caret line="645" column="17" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="e#0#44534#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10280#10281#0" expanded="false" />
+            <element signature="e#10314#10315#0" expanded="false" />
+            <element signature="e#15711#15712#0" expanded="false" />
+            <element signature="e#15747#15748#0" expanded="false" />
+            <element signature="e#16192#16193#0" expanded="false" />
+            <element signature="e#16227#16228#0" expanded="false" />
+            <element signature="e#17326#17327#0" expanded="false" />
+            <element signature="e#17377#17378#0" expanded="false" />
+            <element signature="e#26222#26223#0" expanded="false" />
+            <element signature="e#26265#26266#0" expanded="false" />
+            <element signature="e#26470#26471#0" expanded="false" />
+            <element signature="e#26528#26529#0" expanded="false" />
+            <element signature="e#29535#29536#0" expanded="false" />
+            <element signature="e#29593#29594#0" expanded="false" />
+            <element signature="e#30191#30192#0" expanded="false" />
+            <element signature="e#30245#30246#0" expanded="false" />
+            <element signature="e#30270#30271#0" expanded="false" />
+            <element signature="e#30312#30313#0" expanded="false" />
+            <element signature="e#30346#30347#0" expanded="false" />
+            <element signature="e#30392#30393#0" expanded="false" />
+            <element signature="e#30575#30576#0" expanded="false" />
+            <element signature="e#30629#30630#0" expanded="false" />
+            <element signature="e#30654#30655#0" expanded="false" />
+            <element signature="e#30696#30697#0" expanded="false" />
+            <element signature="e#30730#30731#0" expanded="false" />
+            <element signature="e#30776#30777#0" expanded="false" />
+            <element signature="e#33047#33048#0" expanded="false" />
+            <element signature="e#33096#33097#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -979,60 +934,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/IDemonstrationBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Northwind/Address.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="527">
+        <state vertical-scroll-proportion="0.07727273" vertical-offset="0" max-vertical-offset="880">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="e#161#162#0" expanded="false" />
+            <element signature="e#190#191#0" expanded="false" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#265#266#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#350#351#0" expanded="false" />
+            <element signature="e#390#391#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+            <element signature="e#576#577#0" expanded="false" />
+            <element signature="e#634#635#0" expanded="false" />
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#710#711#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#1005#1006#0" expanded="false" />
+            <element signature="e#1040#1041#0" expanded="false" />
+            <element signature="e#1084#1085#0" expanded="false" />
+            <element signature="e#1122#1123#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Northwind/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+        <state vertical-scroll-proportion="0.09659091" vertical-offset="0" max-vertical-offset="880">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#327#328#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#538#539#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#680#681#0" expanded="false" />
+            <element signature="e#712#713#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#777#778#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#862#863#0" expanded="false" />
+            <element signature="e#897#898#0" expanded="false" />
+            <element signature="e#927#928#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1012#1013#0" expanded="false" />
+            <element signature="e#1044#1045#0" expanded="false" />
+            <element signature="e#1072#1073#0" expanded="false" />
+            <element signature="e#1114#1115#0" expanded="false" />
+            <element signature="e#1148#1149#0" expanded="false" />
+            <element signature="e#1178#1179#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TransactionalBank/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15454546" vertical-offset="0" max-vertical-offset="880">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Console.java">
+    <entry file="file://$PROJECT_DIR$/target/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1258">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.09659091" vertical-offset="0" max-vertical-offset="880">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <caret line="37" column="21" selection-start-line="19" selection-start-column="12" selection-end-line="37" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/Console.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.12" vertical-offset="51" max-vertical-offset="1122">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#2024#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/document/DocumentStore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="7769">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/DocumentStoreBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="2958">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/IDocumentStore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="1207">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/lang/AutoCloseable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33272058" vertical-offset="278" max-vertical-offset="1377">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/client/IDisposalNotification.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="323">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/ravendb/ravendb-client/3.1.0/ravendb-client-3.1.0.jar!/net/ravendb/abstractions/basic/CleanCloseable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_25/src.zip!/java/io/Closeable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/TransactionDemostration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="389" max-vertical-offset="1649">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/DemonstrationBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="850">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1445">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/BulkInsertDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1105">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/ReplicationFailover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5215909" vertical-offset="0" max-vertical-offset="880">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Demonstrations/StreamingAPIDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5443886" vertical-offset="32" max-vertical-offset="629">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,10 +1160,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>JavaClientDemos:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

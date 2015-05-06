@@ -4,7 +4,6 @@ import TransactionalBank.Account;
 import TransactionalBank.Operation;
 import net.ravendb.client.IDocumentSession;
 import net.ravendb.client.IDocumentStore;
-import net.ravendb.client.document.DocumentSession;
 import net.ravendb.client.document.DocumentStore;
 
 import java.io.BufferedReader;
@@ -14,10 +13,11 @@ import java.io.InputStreamReader;
 /**
  * Created by bumax_000 on 5/3/2015.
  */
-public class TransactionDemostration implements IDemonstrationBase{
+public class TransactionDemostration extends DemonstrationBase {
     public void Execute() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try(IDocumentStore store = new DocumentStore("http://localhost:8080", "Transaction").initialize()){
+            useFiddler(store);
             int input = 0;
             IDocumentSession session = store.openSession();
             try {
