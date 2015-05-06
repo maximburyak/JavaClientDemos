@@ -1,7 +1,4 @@
-import Demonstrations.BulkInsertDemo;
-import Demonstrations.DemonstrationBase;
-import Demonstrations.StreamingAPIDemo;
-import Demonstrations.TransactionDemostration;
+import Demonstrations.*;
 import TransactionalBank.QAccount;
 
 import java.io.BufferedReader;
@@ -22,12 +19,12 @@ public class Console {
             System.out.println("1) Transactions");
             System.out.println("2) Replication Failover");
             System.out.println("3) Bulk Insert");
-            System.out.println("3) StreamingAPI");
-            System.out.println("4) Lazy Queries");
-            System.out.println("5) Changes API");
-            System.out.println("6) Aggressive Caching");
-            System.out.println("7) Transformers (With Parameters) - mauro serviente");
-            System.out.println("8) Streaming - demonstrations with fiddler and continuous query");
+            System.out.println("4) StreamingAPI");
+            System.out.println("5) Lazy Queries");
+            System.out.println("6) Changes API");
+            System.out.println("7) Aggressive Caching");
+            System.out.println("9) Transformers (With Parameters) - mauro serviente");
+            System.out.println("9) Streaming - demonstrations with fiddler and continuous query");
 
             System.out.println("20) Clear Screen");
 
@@ -70,6 +67,8 @@ public class Console {
                 return new BulkInsertDemo();
             case 4:
                 return new StreamingAPIDemo();
+            case 7:
+                return new AggressiveCachingDemo();
             default:
                 break;
         }

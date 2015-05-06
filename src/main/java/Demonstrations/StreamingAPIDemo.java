@@ -19,7 +19,7 @@ public class StreamingAPIDemo extends DemonstrationBase {
     IDocumentStore store;
     public StreamingAPIDemo(){
         store = new DocumentStore("http://localhost:8080", "ForgeryDB").initialize();
-        useFiddler(store);
+        //useFiddler(store);
     }
 
     @Override
