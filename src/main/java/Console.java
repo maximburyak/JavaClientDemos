@@ -1,5 +1,6 @@
 import Demonstrations.BulkInsertDemo;
 import Demonstrations.DemonstrationBase;
+import Demonstrations.StreamingAPIDemo;
 import Demonstrations.TransactionDemostration;
 import TransactionalBank.QAccount;
 
@@ -21,6 +22,7 @@ public class Console {
             System.out.println("1) Transactions");
             System.out.println("2) Replication Failover");
             System.out.println("3) Bulk Insert");
+            System.out.println("3) StreamingAPI");
             System.out.println("4) Lazy Queries");
             System.out.println("5) Changes API");
             System.out.println("6) Aggressive Caching");
@@ -65,6 +67,8 @@ public class Console {
                 break;
             case 3:
                 return new BulkInsertDemo();
+            case 4:
+                return new StreamingAPIDemo();
             default:
                 break;
         }
@@ -72,7 +76,7 @@ public class Console {
         return null;
     }
     public static void processCommand(int command) throws  Exception{
-        try( DemonstrationBase demo =  new TransactionDemostration()){
+        try( DemonstrationBase demo =  GetDemonstration(command)){
             demo.Execute();
         }
     }
