@@ -36,6 +36,7 @@ public class Console {
             }
             catch (Exception ex){
                 System.out.println(String.format("illegal input: %1$s", ex.getMessage()));
+                continue;
             }
 
             if (input >= 1 && input <= 20)

@@ -4,6 +4,7 @@ import TransactionalBank.Account;
 import net.ravendb.abstractions.LinqOps;
 import net.ravendb.abstractions.basic.CloseableIterator;
 import net.ravendb.abstractions.data.Constants;
+import net.ravendb.abstractions.data.StreamResult;
 import net.ravendb.client.IDocumentQuery;
 import net.ravendb.client.IDocumentSession;
 import net.ravendb.client.IDocumentStore;
@@ -17,7 +18,8 @@ public class StreamingAPIDemo extends DemonstrationBase {
 
     IDocumentStore store;
     public StreamingAPIDemo(){
-        store = new DocumentStore("http://localhost:8080", "ForgeryDB");
+        store = new DocumentStore("http://localhost:8080", "ForgeryDB").initialize();
+        useFiddler(store);
     }
 
     @Override
@@ -26,10 +28,10 @@ public class StreamingAPIDemo extends DemonstrationBase {
 
         try(IDocumentSession session = store.openSession()){
             IRavenQueryable accountsQuery = session.query(Account.class, "Raven/DocumentsByEntityName");
-            CloseableIterator<Account> accountsIteration = session.advanced().stream(accountsQuery);
+            CloseableIterator<StreamResult> accountsIteration = session.advanced().stream(accountsQuery);
             while(accountsIteration.hasNext()){
-                Account curAccount = accountsIteration.next();
-                System.out.println(String.format("Owner: %1$s10 Balance: %2s10"));
+                Account curAccount = (Account)accountsIteration.next().getDocument();
+                System.out.println(String.format("Owner: %1$s Balance: %2$s", curAccount.getOwner(), curAccount.getBalance()));
             }
         }
     }
