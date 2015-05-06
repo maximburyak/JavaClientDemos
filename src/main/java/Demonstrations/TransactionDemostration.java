@@ -38,11 +38,10 @@ public class TransactionDemostration extends DemonstrationBase {
                                 createAccount(br, session);
                                 break;
                             case 2:
-                                if (Deposit(br, session)) continue;
+                                if (deposit(br, session)) continue;
                                 break;
                             case 3:
-                                System.out.println("<accountId>");
-                                session.delete(br.readLine());
+                                DeleteAcount(br,session);
                                 break;
                             case 4:
                                 session.saveChanges();
@@ -70,7 +69,7 @@ public class TransactionDemostration extends DemonstrationBase {
         }
     }
 
-    private boolean Deposit(BufferedReader br, IDocumentSession session) throws IOException {
+    public static boolean deposit(BufferedReader br, IDocumentSession session) throws IOException {
         System.out.println("<accountId> <delta>");
         String[] params = br.readLine().split("\\s");
         //QAddress a;
@@ -88,7 +87,7 @@ public class TransactionDemostration extends DemonstrationBase {
         return false;
     }
 
-    private void createAccount(BufferedReader br, IDocumentSession session) throws IOException {
+    public static void createAccount(BufferedReader br, IDocumentSession session) throws IOException {
         System.out.println("<owner> <initial balance>");
         String[] params = br.readLine().split("\\s");
         Account newAccount = new Account();
@@ -96,5 +95,10 @@ public class TransactionDemostration extends DemonstrationBase {
         newAccount.setBalance(Integer.parseInt(params[1]));
         session.store(newAccount);
         System.out.println(String.format("new account id: %1$s", session.advanced().getDocumentId(newAccount)));
+    }
+
+    public static void DeleteAcount(BufferedReader br, IDocumentSession session) throws IOException {
+        System.out.println("<accountId>");
+        session.delete(br.readLine());
     }
 }
