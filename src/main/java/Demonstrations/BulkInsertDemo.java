@@ -26,7 +26,7 @@ public class BulkInsertDemo extends DemonstrationBase {
     }
 
     @Override
-    public void Execute() throws Exception {
+    public void execute() throws Exception {
         System.out.println("Inserting amount of 20K accounts");
 
         Random random = new Random();

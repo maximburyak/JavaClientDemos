@@ -14,7 +14,7 @@ import java.io.IOException;
  * Created by bumax_000 on 5/3/2015.
  */
 public class DemonstrationBase  implements Closeable {
-    public void Execute() throws Exception{
+    public void execute() throws Exception{
 
     }
 

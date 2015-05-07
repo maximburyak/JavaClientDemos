@@ -23,8 +23,8 @@ public class Console {
             System.out.println("5) Lazy Queries");
             System.out.println("6) Changes API");
             System.out.println("7) Aggressive Caching");
-            System.out.println("9) Transformers (With Parameters) - mauro serviente");
-            System.out.println("9) Streaming - demonstrations with fiddler and continuous query");
+            System.out.println("8) Patching API");
+
 
             System.out.println("20) Clear Screen");
 
@@ -69,6 +69,8 @@ public class Console {
                 return new StreamingAPIDemo();
             case 7:
                 return new AggressiveCachingDemo();
+            case 8:
+                return new
             default:
                 break;
         }
@@ -77,7 +79,7 @@ public class Console {
     }
     public static void processCommand(int command) throws  Exception{
         try( DemonstrationBase demo =  GetDemonstration(command)){
-            demo.Execute();
+            demo.execute();
         }
     }
 }

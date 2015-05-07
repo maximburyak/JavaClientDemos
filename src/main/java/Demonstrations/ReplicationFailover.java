@@ -23,7 +23,7 @@ public class ReplicationFailover extends DemonstrationBase{
         accountApi = new TransactionDemostration();
     }
     @Override
-    public void Execute() throws Exception {
+    public void execute() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int input = 0;
         try

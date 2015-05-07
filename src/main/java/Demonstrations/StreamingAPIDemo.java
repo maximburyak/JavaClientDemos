@@ -23,7 +23,7 @@ public class StreamingAPIDemo extends DemonstrationBase {
     }
 
     @Override
-    public void Execute(){
+    public void execute(){
         System.out.println("Press any key to start printing all accounts");
 
         try(IDocumentSession session = store.openSession()){

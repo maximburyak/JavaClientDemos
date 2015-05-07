@@ -29,7 +29,7 @@ public class AggressiveCachingDemo extends DemonstrationBase {
     }
 
     @Override
-    public void Execute() throws  Exception{
+    public void execute() throws  Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter Enter To Get Recent Account Amount, press -1 to quit:");
 
