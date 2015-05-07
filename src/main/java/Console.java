@@ -1,7 +1,4 @@
-import Demonstrations.BulkInsertDemo;
-import Demonstrations.DemonstrationBase;
-import Demonstrations.StreamingAPIDemo;
-import Demonstrations.TransactionDemostration;
+import Demonstrations.*;
 import TransactionalBank.QAccount;
 
 import java.io.BufferedReader;
@@ -69,6 +66,12 @@ public class Console {
                 return new BulkInsertDemo();
             case 4:
                 return new StreamingAPIDemo();
+            case 5:
+                return new ChangesApiDemo();
+            case 6:
+                return new TransformerDemo();
+            case 7:
+                return new TransformerDemo();
             default:
                 break;
         }
