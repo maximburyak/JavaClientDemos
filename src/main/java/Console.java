@@ -20,11 +20,10 @@ public class Console {
             System.out.println("2) Replication Failover");
             System.out.println("3) Bulk Insert");
             System.out.println("4) StreamingAPI");
-            System.out.println("5) Lazy Queries");
-            System.out.println("6) Changes API");
-            System.out.println("7) Aggressive Caching");
-            System.out.println("8) Patching API");
-
+            System.out.println("5) Changes API");
+            System.out.println("6) Aggressive Caching");
+            System.out.println("7) Transformers");
+            System.out.println("8) Streaming - demonstrations with fiddler and continuous query");
 
             System.out.println("20) Clear Screen");
 
@@ -33,7 +32,6 @@ public class Console {
             }
             catch (Exception ex){
                 System.out.println(String.format("illegal input: %1$s", ex.getMessage()));
-                continue;
             }
 
             if (input >= 1 && input <= 20)
@@ -44,39 +42,31 @@ public class Console {
                 }
             else if (input != -1)
                 System.out.println(String.format("illegal input: %1$d", input));
-
-            /*
-            * WOW Features:
-            * 1) Query Streaming
-            * 2) Full Text Search (also, define indexes)
-            * 3) Map Reduce
-            * 4) Multi Map Reduce
-            * 5) Map Reduce visualizer
-            * 6) 
-            * */
         }
     }
 
     public static DemonstrationBase GetDemonstration(int command){
         switch (command){
             case 1:
-                return new TransactionDemostration();
+                return new TransactionDemo();
             case 2:
-                break;
+                return new ReplicationFailover();
             case 3:
                 return new BulkInsertDemo();
             case 4:
                 return new StreamingAPIDemo();
-            case 7:
+            case 5:
+                return new ChangesApiDemo();
+            case 6:
                 return new AggressiveCachingDemo();
-            case 8:
-                return new
+            case 7:
+                return new TransformerDemo();
             default:
                 break;
         }
-
         return null;
     }
+
     public static void processCommand(int command) throws  Exception{
         try( DemonstrationBase demo =  GetDemonstration(command)){
             demo.execute();

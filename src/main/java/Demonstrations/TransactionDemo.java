@@ -9,11 +9,12 @@ import net.ravendb.client.document.DocumentStore;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 
 /**
  * Created by bumax_000 on 5/3/2015.
  */
-public class TransactionDemostration extends DemonstrationBase {
+public class TransactionDemo extends DemonstrationBase {
     public void execute() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try(IDocumentStore store = new DocumentStore("http://localhost:8080", "Transaction").initialize()){
@@ -82,6 +83,8 @@ public class TransactionDemostration extends DemonstrationBase {
         newOperation.setAccountId(params[0]);
         int delta = Integer.parseInt(params[1]);
         newOperation.setDelta(delta);
+        newOperation.setOperationTime(new Date());
+        session.store(newOperation);
         existingAccount.setBalance(existingAccount.getBalance() + delta);
         session.store(existingAccount);
         return false;
