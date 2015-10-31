@@ -23,9 +23,6 @@ public class Console {
             System.out.println("5) Changes API");
             System.out.println("6) Aggressive Caching");
             System.out.println("7) Transformers");
-            System.out.println("8) Streaming - demonstrations with fiddler and continuous query");
-
-            System.out.println("20) Clear Screen");
 
             try {
                 input  = Integer.parseInt(br.readLine());
@@ -34,7 +31,7 @@ public class Console {
                 System.out.println(String.format("illegal input: %1$s", ex.getMessage()));
             }
 
-            if (input >= 1 && input <= 20)
+            if (input >= 1 && input <= 7)
                 try {
                     processCommand(input);
                 } catch (Exception e) {

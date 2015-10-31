@@ -21,7 +21,7 @@ public class BulkInsertDemo extends DemonstrationBase {
     IDocumentStore store;
 
     public BulkInsertDemo() {
-        store = new DocumentStore("http://localhost:8080", "ForgeryDB").initialize();
+        store = new DocumentStore("http://localhost:8080", "TreasuryDB").initialize();
 
     }
 

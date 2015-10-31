@@ -60,6 +60,7 @@ public class ReplicationFailover extends DemonstrationBase {
                         case 4:
                             return;
                     }
+                    session.saveChanges();
                 }
             }
 

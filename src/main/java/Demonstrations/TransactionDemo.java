@@ -18,7 +18,7 @@ public class TransactionDemo extends DemonstrationBase {
     public void execute() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try(IDocumentStore store = new DocumentStore("http://localhost:8080", "Transaction").initialize()){
-            useFiddler(store);
+            //useFiddler(store);
             int input = 0;
             IDocumentSession session = store.openSession();
             try {
@@ -87,21 +87,25 @@ public class TransactionDemo extends DemonstrationBase {
         session.store(newOperation);
         existingAccount.setBalance(existingAccount.getBalance() + delta);
         session.store(existingAccount);
+        session.saveChanges();
         return false;
     }
 
     public static void createAccount(BufferedReader br, IDocumentSession session) throws IOException {
         System.out.println("<owner> <initial balance>");
         String[] params = br.readLine().split("\\s");
+
         Account newAccount = new Account();
         newAccount.setOwner(params[0]);
         newAccount.setBalance(Integer.parseInt(params[1]));
         session.store(newAccount);
+        session.saveChanges();
         System.out.println(String.format("new account id: %1$s", session.advanced().getDocumentId(newAccount)));
     }
 
     public static void DeleteAcount(BufferedReader br, IDocumentSession session) throws IOException {
         System.out.println("<accountId>");
         session.delete(br.readLine());
+        session.saveChanges();
     }
 }

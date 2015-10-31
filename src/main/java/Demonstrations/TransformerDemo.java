@@ -46,10 +46,10 @@ public class TransformerDemo extends DemonstrationBase {
                 case 1:
                     System.out.println("<account id> <timezone>");
                     System.out.println("time zone option are:");
-                    System.out.println("1 - Dateline Standard Time(GMT-12:00)");
+                    System.out.println("1 - GMT                   (GMT)");
                     System.out.println("2 - Pacific Time          (GMT-08:00)");
-                    System.out.println("3 - Caracas, La Paz       (GMT-04:00)");
-                    System.out.println("4 - Jerusalem             (GMT+12:00)");
+                    System.out.println("3 - Stockholm             (GMT-04:00)");
+                    System.out.println("4 - Beijing               (GMT+08:00)");
                     try {
                         String[] params = br.readLine().split("\\s");
                         int timeZone = Integer.parseInt(params[1]);
@@ -57,16 +57,16 @@ public class TransformerDemo extends DemonstrationBase {
                         try (IDocumentSession session = store.openSession();) {
                             switch (timeZone) {
                                 case 1:
-                                    timeZoneStr = "Dateline%20Standard%20Time";
+                                    timeZoneStr = "GMT%20Standard%20Time";
                                     break;
                                 case 2:
-                                    timeZoneStr = "Pacific%20Time";
+                                    timeZoneStr = "Pacific%20Standard%20Time";
                                     break;
                                 case 3:
-                                    timeZoneStr = "Caracas,%20La%20Paz";
+                                    timeZoneStr = "W.%20Europe%20Standard%20Time";
                                     break;
                                 case 4:
-                                    timeZoneStr = "Jerusalem";
+                                    timeZoneStr = "China%20Standard%20Time";
                                     break;
                             }
                             List<Operation> res = session.query(Operation.class)
